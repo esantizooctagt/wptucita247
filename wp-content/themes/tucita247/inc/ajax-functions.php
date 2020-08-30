@@ -47,6 +47,7 @@ function add_business() {
 				"MaxCustomer"   =>  isset($_POST['MaxCustomer']) ? $_POST['MaxCustomer'] : '',
 			))
 	);
+
 	/*$options = [
 		'method'      => 'POST',
 		'timeout' 	  => 30,
@@ -75,15 +76,21 @@ function add_business() {
 		CURLOPT_POSTFIELDS =>json_encode($body),
 		CURLOPT_HTTPHEADER => array(
 			"Content-Type: application/json",
-			"origin: https://www.tucita247.com"
+			"origin: https://tucita247.local"
 		),
 	));
 
 	$response = curl_exec($curl);
 	$responseJson = json_decode($response);
-	alert($responseJson);
-	curl_close($curl);
 
+	// echo '<pre>';
+	// print_r($responseJson);
+	// // var_dump($posts);
+	// echo '</pre>';
+	// die();
+
+	// alert($responseJson);
+	curl_close($curl);
 
 	$businessId = $responseJson->BusinessId!="" ? $responseJson->BusinessId : 0;
 	$return=$businessId;

@@ -61,16 +61,20 @@ $("#wizard-registration").wizard({
   }
 }).wizard( "form" ).submit(function( event ) {
   event.preventDefault();
+  
   $("#modalLoading").modal('show',{keyboard: false, backdrop:false});
   planSeleccionado=$('#planes').val();
   planSeleccionadoID=$('#planes').find(':selected').data('plan');
 
+  // console.log(ajax_var.url);
+  // console.log("action=add_business&"+ jQuery(this).serialize()  + "&p="+planSeleccionadoID+"&nonce=" + $("#nonce").val());
+  // console.log("linea 65");
+  // return false;
   jQuery.ajax({
     type: "post",
     url: ajax_var.url,
     data: "action=add_business&"+ jQuery(this).serialize()  + "&p="+planSeleccionadoID+"&nonce=" + $("#nonce").val(),
     success: function (result) {
-
       if(result=="0"){
         alert("Error al crear la cuenta [Código: 0]");
       }else{
@@ -84,7 +88,9 @@ $("#wizard-registration").wizard({
           window.location.href = ajax_var.site_url+'/checkout';
         }
       }
-
+    },
+    error: function(err){
+      console.log(err);
     }
   });
 
