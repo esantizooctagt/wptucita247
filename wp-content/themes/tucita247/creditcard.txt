@@ -1,0 +1,27 @@
+<div class="step submit">
+						<section>
+							<h6><?php echo $txt_paso;?> 6 <?php echo $txt_de;?> 6</h6>
+							<div class="progress mb-4" style="height: 1px;">
+								<div class="progress-bar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"><span class="sr-only">100%</span></div>
+							</div><label class="d-block"><?php echo $txt_tarjeta_credito;?></label>
+							<div class="form-row">
+								<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+									<div class="form-group"><input class="form-control form-control-lg" type="number"></div><label class="d-block"><?php echo $txt_nombre_tarjeta;?></label></div>
+								<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+									<div class="form-group"><input class="form-control form-control-lg" type="text"></div>
+								</div>
+								<div class="col-12 col-sm-8 col-md-6 col-lg-4 col-xl-5"><label class="d-block"><?php echo $txt_fehca_vencimiento;?></label>
+									<div class="form-group">
+										<ul class="list-inline">
+											<li class="list-inline-item"><input class="form-control form-control-lg" type="number" style="width: 100px;"></li>
+											<li class="list-inline-item">/</li>
+											<li class="list-inline-item"><input class="form-control form-control-lg" type="number" style="width: 100px;"></li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-auto"><label class="d-block">CVV</label>
+									<div class="form-group"><input class="form-control form-control-lg" type="number" style="width: 100px;"></div>
+								</div>
+							</div>
+						</section>
+					</div>

@@ -1,0 +1,36 @@
+.card-paquetes .card-body{
+    height:345px;
+}
+@media (max-width: 1180px) {
+    .titulo-paquete {
+        font-size: 30px;
+    }
+
+    .titulo-paquete-nombre {
+        font-size: 18px;
+    }
+}
+
+
+@media (max-width: 992px) {
+    .titulo-paquete {
+        font-size: 50px;
+    }
+
+    .titulo-paquete-nombre {
+        font-size: 30px;
+    }
+}
+
+.cd-top {
+    background: url('../img/to-top.png') center 50% no-repeat #f64d03;
+}
+
+.woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt{
+    background: #f64d03;
+}
+
+.woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover {
+    background: rgba(246, 77, 3, 0.89);
+    color: #fff;
+}
