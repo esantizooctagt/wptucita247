@@ -16,16 +16,17 @@ function init_dinamics_gateway_class() {
 	class WC_Gateway_Dynamics extends WC_Payment_Gateway {
 
 		public $domain;
-		public $defaultPage = '/checkout';
 		public $apiUrl;
 		public $siteId;
 		public $merchantKey;
 
 		public function __construct() {
+			$config = get_option( 'tucita', array() );
+
 			$this->domain      = 'dinamics_payment';
-			$this->apiUrl      = 'https://stage.agilpay.net/WebApi/APaymentTokenApi/';// $config['conf']['dynamics']['apiURL']; //'https://stage.agilpay.net/WebApi/APaymentTokenApi/';
-			$this->siteId      = 'L5JzsfJamGYqkR6U'; //$config['conf']['dynamics']['siteId']; //'L5JzsfJamGYqkR6U';
-			$this->merchantKey = 'NDk5Mjk0ODky';// $config['conf']['dynamics']['merchantKey']; // 'NDk5Mjk0ODky';
+			$this->apiUrl      = $config['conf']['dynamics']['apiURL']; //'https://stage.agilpay.net/WebApi/APaymentTokenApi/';
+			$this->siteId      = $config['conf']['dynamics']['siteId']; //'L5JzsfJamGYqkR6U';
+			$this->merchantKey = $config['conf']['dynamics']['merchantKey']; // 'NDk5Mjk0ODky';
 
 			$this->id                 = 'dinamics';
 			$this->icon               = apply_filters( 'woocommerce_custom_gateway_icon', '' );
@@ -153,7 +154,7 @@ function init_dinamics_gateway_class() {
 			// //$this->get_return_url( $order )
 			return array(
 				'result'    => 'success',
-				'redirect'  => $this->defaultPage
+				'redirect'  => $this->get_return_url( $order )
 			);
 		}
 
@@ -173,18 +174,16 @@ function init_dinamics_gateway_class() {
 				$order->add_order_note( "Pago no ejecutado | Message: ". $resultadoPOS->Message );
 
 				// Set order status
-				$order->update_status( 'on-hold', __( 'Checkout con Dynamics POS Failed. ', $this->domain ) );
+				$order->update_status( 'failed', __( 'Checkout con Dynamics POS Failed. ', $this->domain ) );
 			} else {
-				$order->add_order_note( "Pago ejecutado | Transacción TC: ". $resultadoPOS->IDTransaction );
+				$transaction = $resultadoPOS->IDTransaction;
+				$order->add_order_note( "Pago ejecutado | Transacción TC: ". $transaction );
 				// Set order status
 				$order->update_status( 'completed', __( 'Checkout con Dynamics POS. ', $this->domain ) );
-
-				$bool = WC_Order::payment_complete( $resultadoPOS->IDTransaction );
+				$order->set_transaction_id($transaction);
 				// Remove cart
 				WC()->cart->empty_cart();
 				wp_logout();
-
-				$defaultPage = '/thankyou';
 			}
 		}
 
@@ -203,10 +202,11 @@ function init_dinamics_gateway_class() {
 				$order->add_order_note( "Pago no ejecutado | Message: ". $resultadoPOS->Message );
 
 				// Set order status
-				$order->update_status( 'on-hold', __( 'Checkout con Dynamics POS Failed. ', $this->domain ) );
+				$order->update_status( 'failed', __( 'Checkout con Dynamics POS Failed. ', $this->domain ) );
 			} else {
-				$order->add_order_note( "Pago ejecutado | Transacción TC: ". $resultadoPOS->IDTransaction );
-
+				$transaction = $resultadoPOS->IDTransaction;
+				$order->add_order_note( "Pago ejecutado | Transacción TC: ". $transaction );
+				$order->set_transaction_id($transaction);
 				foreach( $order->get_items() as $item_id => $item ){
 					$product_id    = $item['product_id'];
 				}
@@ -215,20 +215,17 @@ function init_dinamics_gateway_class() {
 				$update = $this->updatePlan($order_id, $tipo, $no_citas);
 
 				if($update->Code=="200"){
-					$order->add_order_note( "Plan Activado | Transacción TC: ". $resultadoPOS->IDTransaction );
+					$order->add_order_note( "Plan Activado | Transacción TC: ". $transaction );
 					$status = 'wc-' === substr( $this->order_status, 0, 3 ) ? substr( $this->order_status, 3 ) : $this->order_status;
 
 					// Set order status
 					$order->update_status( $status, __( 'Checkout con Dynamics POS. ', $this->domain ) );
 
-					$bool = WC_Order::payment_complete( $resultadoPOS->IDTransaction );
 					// Remove cart
 					WC()->cart->empty_cart();
 					wp_logout();
-
-					$defaultPage = '/thankyou';
 				}else{
-					$order->add_order_note( "Fallo en la activación | Transacción TC:". $resultadoPOS->IDTransaction );
+					$order->add_order_note( "Fallo en la activación | Transacción TC:". $transaction );
 				}
 			}
 		}

@@ -92,10 +92,10 @@ function add_business() {
 	// alert($responseJson);
 	curl_close($curl);
 
-	$businessId = $responseJson->BusinessId!="" ? $responseJson->BusinessId : 0;
+	$businessId = $responseJson->BusinessId!="" ? $responseJson->BusinessId : "0";
 	$return=$businessId;
 
-	if($businessId!=0){
+	if($businessId!="0"){
 		$existsEmail = email_exists(  $_POST['Email']  );
 
 		if(!$existsEmail){
@@ -113,31 +113,31 @@ function add_business() {
 			$user_id = wp_insert_user( $userdata ) ;
 			if ( is_wp_error( $user_id ) ) {
 				//echo $userId->get_error_message();
-				$return = 0;
+				$return = "0";
 			}
 		}
 
 		wp_logout();
-		if(!is_user_logged_in()){
-			$creds = array(
-				'user_login'    => $businessId,
-				'user_password' => MD5($_POST['Email']),
-				'remember'      => false
-			);
+		// if(!is_user_logged_in()){
+		$creds = array(
+			'user_login'    => $businessId,
+			'user_password' => MD5($_POST['Email']),
+			'remember'      => false
+		);
 
-			$userLogin = wp_signon( $creds, is_ssl() );
+		$userLogin = wp_signon( $creds, is_ssl() );
 
-			if ( is_wp_error( $userLogin ) ) {
-				//echo $userLogin->get_error_message();
-				$return = 0;
-			}else{
-				$woocommerce->cart->empty_cart();
-				$woocommerce->cart->add_to_cart( $_POST['p'], 1);
-			}
+		if ( is_wp_error( $userLogin ) ) {
+			//echo $userLogin->get_error_message();
+			$return = "0";
+		}else{
+			$woocommerce->cart->empty_cart();
+			$woocommerce->cart->add_to_cart( $_POST['p'], 1);
 		}
+		// }
 
 		if($_POST['p']==""){
-			$return = 99;
+			$return = "99";
 		}
 	}
 
