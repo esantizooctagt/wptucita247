@@ -33,7 +33,7 @@ function init_dinamics_gateway_class() {
 			$this->has_fields         = true;
 			$this->method_title       = __( 'Dynamics Payments', $this->domain );
 			$this->method_description = __( 'Integracion de Dynamics Payments', $this->domain );
-			$this->supports           = array( 'subscriptions', 'products' );
+			$this->supports           = array( 'products', 'subscriptions', 'subscription_cancellation', );
 
 			// Load the settings.
 			$this->init_form_fields();
@@ -151,7 +151,7 @@ function init_dinamics_gateway_class() {
 			}
 
 			// Return thankyou redirect
-			// //$this->get_return_url( $order )
+			// $this->get_return_url( $order )
 			return array(
 				'result'    => 'success',
 				'redirect'  => $this->get_return_url( $order )
