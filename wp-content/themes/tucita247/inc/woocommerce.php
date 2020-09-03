@@ -10,3 +10,9 @@ add_filter('woocommerce_register_post_type_product', function($post_type) {
 	$post_type['has_archive'] = false;
 	return $post_type;
 });
+
+
+add_filter( 'woocommerce_show_page_title' , 'desactivar_pag_tienda' );
+function desactivar_pag_tienda() {
+	return false;
+}

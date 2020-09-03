@@ -1,3 +1,4 @@
 /wp-admin
 /wp-includes
+/wp-content/debug.log
 wp-config.php
