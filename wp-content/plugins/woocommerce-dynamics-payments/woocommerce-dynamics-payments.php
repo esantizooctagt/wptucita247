@@ -245,7 +245,10 @@ function init_dinamics_gateway_class()
                     // Remove cart
                     WC()->cart->empty_cart();
 
+                    $this->cancelPreviousSubscriptions();
+
                     wp_logout();
+
                 } else {
                     $order->add_order_note("Fallo en la activación | Transacción TC:" . $transaction);
                 }
@@ -474,6 +477,30 @@ function init_dinamics_gateway_class()
 
             return $responseJson;
 
+        }
+
+        public function cancelPreviousSubscriptions(){
+            $no_of_loops = 0;
+            $user_id = get_current_user_id();
+
+            // Get all customer subscriptions
+            $args = array(
+                'subscription_status'       => 'active',
+                'subscriptions_per_page'    => -1,
+                'customer_id'               => $user_id,
+                'orderby'                   => 'ID',
+                'order'                     => 'DESC'
+            );
+            $subscriptions = wcs_get_subscriptions($args);
+
+            // Going through each current customer subscriptions
+            foreach ( $subscriptions as $subscription ) {
+                $no_of_loops = $no_of_loops + 1;
+
+                if ($no_of_loops > 1){
+                    $subscription->update_status( 'cancelled' );
+                }
+            }
         }
     }
 

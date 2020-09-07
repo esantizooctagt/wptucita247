@@ -19,192 +19,18 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="43ea18a0-278a-45be-b8e0-a1269d0dd4c1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/tucita247.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-admin/vendor/jetpack-autoloader/autoload_functions.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/add-to-cart/attributes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/add-to-cart/block.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/add-to-cart/constants.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/add-to-cart/edit.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/add-to-cart/frontend.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/add-to-cart/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/add-to-cart/product-types/external.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/add-to-cart/product-types/grouped/group-list/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/add-to-cart/product-types/grouped/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/add-to-cart/product-types/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/add-to-cart/product-types/simple.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/add-to-cart/product-types/variable/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/add-to-cart/product-types/variable/variation-attributes/attribute-picker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/add-to-cart/product-types/variable/variation-attributes/attribute-select-control.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/add-to-cart/product-types/variable/variation-attributes/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/add-to-cart/product-types/variable/variation-attributes/style.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/add-to-cart/product-types/variable/variation-attributes/utils.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/add-to-cart/shared/add-to-cart-button.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/add-to-cart/shared/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/add-to-cart/shared/product-unavailable.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/add-to-cart/shared/quantity-input.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/add-to-cart/style.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/button/attributes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/button/block.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/button/constants.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/button/edit.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/button/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/button/style.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/category-list/attributes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/category-list/block.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/category-list/constants.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/category-list/edit.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/category-list/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/category-list/style.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/image/attributes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/image/block.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/image/constants.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/image/edit.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/image/frontend.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/image/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/image/style.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/price/attributes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/price/block.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/price/constants.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/price/edit.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/price/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/price/style.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/rating/attributes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/rating/block.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/rating/constants.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/rating/edit.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/rating/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/rating/style.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/sale-badge/attributes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/sale-badge/block.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/sale-badge/constants.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/sale-badge/edit.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/sale-badge/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/sale-badge/style.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/save.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/shared/config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/shared/editor.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/shared/with-product-selector.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/sku/attributes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/sku/block.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/sku/constants.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/sku/edit.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/sku/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/sku/style.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/stock-indicator/attributes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/stock-indicator/block.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/stock-indicator/constants.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/stock-indicator/edit.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/stock-indicator/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/stock-indicator/style.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/summary/attributes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/summary/block.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/summary/constants.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/summary/edit.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/summary/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/summary/style.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/tag-list/attributes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/tag-list/block.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/tag-list/constants.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/tag-list/edit.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/tag-list/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/tag-list/style.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/title/attributes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/title/block.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/title/constants.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/title/edit.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/title/frontend.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/title/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/title/style.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/button/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/button/stories/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/button/style.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/cart-checkout/product-backorder-badge/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/cart-checkout/product-badge/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/components/cart-checkout/product-badge/style.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/blocks-registry/block-components/get-registered-block-components.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/blocks-registry/block-components/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/blocks-registry/block-components/register-block-component.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/blocks-registry/block-components/registered-block-components-init.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/blocks-registry/block-components/test/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/blocks/cart-checkout/cart/test/block.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/icons/stories/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/payment-method-extensions/payment-methods/bacs/constants.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/payment-method-extensions/payment-methods/bacs/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/payment-method-extensions/payment-methods/cod/constants.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/payment-method-extensions/payment-methods/cod/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/shared/hocs/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/shared/hocs/with-product-data-context.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/atomic-block-components/add-to-cart-frontend.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/atomic-block-components/add-to-cart.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/atomic-block-components/add-to-cart~atomic-block-components/button.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/atomic-block-components/add-to-cart~atomic-block-components/image~atomic-block-components/title.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/atomic-block-components/button-frontend.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/atomic-block-components/button.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/atomic-block-components/category-list-frontend.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/atomic-block-components/category-list.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/atomic-block-components/image-frontend.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/atomic-block-components/image.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/atomic-block-components/price-frontend.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/atomic-block-components/price.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/atomic-block-components/rating-frontend.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/atomic-block-components/rating.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/atomic-block-components/sale-badge-frontend.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/atomic-block-components/sale-badge.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/atomic-block-components/sku-frontend.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/atomic-block-components/sku.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/atomic-block-components/stock-indicator-frontend.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/atomic-block-components/stock-indicator.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/atomic-block-components/summary-frontend.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/atomic-block-components/summary.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/atomic-block-components/tag-list-frontend.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/atomic-block-components/tag-list.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/atomic-block-components/title-frontend.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/atomic-block-components/title.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/vendors~atomic-block-components/price-frontend.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/packages/woocommerce-blocks/src/Domain/Services/DraftOrders.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/src/Internal/WCCom/ConnectionHelper.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/src/Proxies/ActionsProxy.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/src/Proxies/LegacyProxy.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/src/Utilities/StringUtil.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/vendor/jetpack-autoloader/autoload_functions.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/vendor/psr/container/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/vendor/psr/container/src/ContainerExceptionInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/vendor/psr/container/src/ContainerInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/vendor/psr/container/src/NotFoundExceptionInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-crontrol/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-crontrol/css/wp-crontrol.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-crontrol/js/wp-crontrol.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-crontrol/readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-crontrol/src/event-list-table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-crontrol/src/event.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-crontrol/src/schedule-list-table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-crontrol/src/schedule.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-crontrol/wp-crontrol.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/themes/tucita247/page-direct-shopping.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/uploads/wc-logs/.htaccess" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/uploads/wc-logs/failed-scheduled-actions-2020-09-06-0e952ccede644f6b63b29b4154fefed9.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/uploads/wc-logs/fatal-errors-2020-09-06-d5a0f62714679df95ff4c1afd4d07dac.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/uploads/wc-logs/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/uploads/wc-logs/test-log.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/qtranslate-x/qtranslate_frontend.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/qtranslate-x/qtranslate_frontend.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/woocommerce-dynamics-payments/woocommerce-dynamics-payments.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce-dynamics-payments/woocommerce-dynamics-payments.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tucita247/assets/js/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/tucita247/assets/js/scripts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tucita247/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/tucita247/functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tucita247/inc/ajax-functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/tucita247/inc/ajax-functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tucita247/inc/enqueue.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/tucita247/inc/enqueue.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tucita247/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/tucita247/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tucita247/template-parts/modulos/prices.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/tucita247/template-parts/modulos/prices.php" afterDir="false" />
+    <list default="true" id="43ea18a0-278a-45be-b8e0-a1269d0dd4c1" name="Default Changelist" comment="Cambios:&#10;&#10;-Validar el correcto funcionamiento de los cobros recurrentes (ya que este no se esta ejecutando)&#10;-Validar el cobro a productos no de suscripcion sino de compra directa&#10;-Crear una pagina que reciba en la url los siguientes parametros (businessId, email y tipo de suscripcion en formato MD5), estos parametros seran de utilidad para 1. registrar y logear al usuario para la compra, 2. Desplegar o no el contenido de compra directa (Si es FREE solo es el contenido de suscripcion el que se le muestra)&#10;-productos que jalen de woocommerce&#10;-Ver que funcione el flujo de adquisicion de compra directa y suscripcion desde esta pagina.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+    </option>
   </component>
   <component name="ComposerSettings">
     <execution />
@@ -242,8 +68,16 @@
       <workItem from="1599157787367" duration="63000" />
       <workItem from="1599157854862" duration="15698000" />
       <workItem from="1599240636190" duration="5000" />
-      <workItem from="1599441110496" duration="1459000" />
+      <workItem from="1599441110496" duration="2231000" />
     </task>
+    <task id="LOCAL-00001" summary="Cambios:&#10;&#10;-Validar el correcto funcionamiento de los cobros recurrentes (ya que este no se esta ejecutando)&#10;-Validar el cobro a productos no de suscripcion sino de compra directa&#10;-Crear una pagina que reciba en la url los siguientes parametros (businessId, email y tipo de suscripcion en formato MD5), estos parametros seran de utilidad para 1. registrar y logear al usuario para la compra, 2. Desplegar o no el contenido de compra directa (Si es FREE solo es el contenido de suscripcion el que se le muestra)&#10;-productos que jalen de woocommerce&#10;-Ver que funcione el flujo de adquisicion de compra directa y suscripcion desde esta pagina.">
+      <created>1599442662185</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1599442662185</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -264,7 +98,8 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="Cambios:&#10;&#10;-Validar el correcto funcionamiento de los cobros recurrentes (ya que este no se esta ejecutando)&#10;-Validar el cobro a productos no de suscripcion sino de compra directa&#10;-Crear una pagina que reciba en la url los siguientes parametros (businessId, email y tipo de suscripcion en formato MD5), estos parametros seran de utilidad para 1. registrar y logear al usuario para la compra, 2. Desplegar o no el contenido de compra directa (Si es FREE solo es el contenido de suscripcion el que se le muestra)&#10;-productos que jalen de woocommerce&#10;-Ver que funcione el flujo de adquisicion de compra directa y suscripcion desde esta pagina." />
+    <option name="LAST_COMMIT_MESSAGE" value="Cambios:&#10;&#10;-Validar el correcto funcionamiento de los cobros recurrentes (ya que este no se esta ejecutando)&#10;-Validar el cobro a productos no de suscripcion sino de compra directa&#10;-Crear una pagina que reciba en la url los siguientes parametros (businessId, email y tipo de suscripcion en formato MD5), estos parametros seran de utilidad para 1. registrar y logear al usuario para la compra, 2. Desplegar o no el contenido de compra directa (Si es FREE solo es el contenido de suscripcion el que se le muestra)&#10;-productos que jalen de woocommerce&#10;-Ver que funcione el flujo de adquisicion de compra directa y suscripcion desde esta pagina." />
   </component>
   <component name="WindowStateProjectService">
     <state x="1123" y="607" width="375" height="154" key="#WordPress" timestamp="1599100712098">
@@ -287,6 +122,10 @@
       <screen x="72" y="27" width="2488" height="1308" />
     </state>
     <state x="1063" y="364" width="496" height="640" key="RollbackChangesDialog/72.27.2488.1308@72.27.2488.1308" timestamp="1599441596495" />
+    <state x="487" y="463" width="1380" height="535" key="Vcs.Push.Dialog.v2" timestamp="1599442709846">
+      <screen x="72" y="27" width="2488" height="1308" />
+    </state>
+    <state x="487" y="463" width="1380" height="535" key="Vcs.Push.Dialog.v2/72.27.2488.1308@72.27.2488.1308" timestamp="1599442709846" />
     <state x="930" y="299" width="762" height="770" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1599442634028">
       <screen x="72" y="27" width="2488" height="1308" />
     </state>
