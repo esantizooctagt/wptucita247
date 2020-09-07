@@ -25,28 +25,46 @@ if ( class_exists( 'WooCommerce' ) ) {
 }
 
 add_filter( 'woocommerce_order_button_text', 'misha_custom_button_text' );
- 
+
 function misha_custom_button_text( $button_text ) {
-   return 'Pay now'; // new text is here 
+   return 'Pay now'; // new text is here
 }
 
-add_action( 'template_redirect', 'wc_custom_redirect_after_purchase' ); 
-function wc_custom_redirect_after_purchase() { 
+add_action( 'template_redirect', 'wc_custom_redirect_after_purchase' );
+function wc_custom_redirect_after_purchase() {
 	global $wp;
 
-	$order_id  = absint( $wp->query_vars['order-received'] );
-  	if ( empty($order_id) || $order_id == 0 )
+	$order_id = ! empty( $wp->query_vars['order-received'] ) ? absint( $wp->query_vars['order-received'] ) : 0;
+	if ( empty($order_id) || $order_id == 0 )
 		return;
-		
+
   	if ( is_checkout() && !empty($wp->query_vars['order-received']) ) {
 		$order = wc_get_order( $order_id );
 		if (!$order->has_status('completed')){
 			$lang = get_locale() == "es_ES" ? "es/error-page" : "error-page";
-			wp_redirect( 'https://tucita247.local/' . $lang );
+			wp_redirect( 'http://wordpress.test/' . $lang );
 		} else {
 			$lang = get_locale() == "es_ES" ? "es/gracias" : "thankyou";
-			wp_redirect( 'https://tucita247.local/' . $lang );
+			wp_redirect( 'http://wordpress.test/' . $lang );
 		}
     	exit;
   	}
+}
+
+function sortBySubValue($array, $value, $asc = true, $preserveKeys = false)
+{
+	if (is_object(reset($array))) {
+		$preserveKeys ? uasort($array, function ($a, $b) use ($value, $asc) {
+			return $a->{$value} == $b->{$value} ? 0 : ($a->{$value} <=> $b->{$value}) * ($asc ? 1 : -1);
+		}) : usort($array, function ($a, $b) use ($value, $asc) {
+			return $a->{$value} == $b->{$value} ? 0 : ($a->{$value} <=> $b->{$value}) * ($asc ? 1 : -1);
+		});
+	} else {
+		$preserveKeys ? uasort($array, function ($a, $b) use ($value, $asc) {
+			return $a[$value] == $b[$value] ? 0 : ($a[$value] <=> $b[$value]) * ($asc ? 1 : -1);
+		}) : usort($array, function ($a, $b) use ($value, $asc) {
+			return $a[$value] == $b[$value] ? 0 : ($a[$value] <=> $b[$value]) * ($asc ? 1 : -1);
+		});
+	}
+	return $array;
 }

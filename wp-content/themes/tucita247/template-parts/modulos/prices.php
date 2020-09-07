@@ -21,6 +21,33 @@
 		$txt_incluido=__('[:en]Included[:es]Incluido[:]');
 		$txt_suscribirme=__('[:en]Sign Up Now[:es]Suscribirme[:]');
 		$txt_citas_adicionales_gratis=__('[:en]Limited features to:<br/>1 location, service & reason to visit[:es]Función limitada a:<br/>1 localización, servicio & propósito de visita[:]');
+
+
+		// Get plans.
+		$args     = array(
+			'orderby'  => 'price', //Does not work, see sortBySubValue as a workaround
+			'order'    => 'ASC',
+			'category' => array( 'plans' ),
+		);
+		$products = wc_get_products( $args );
+
+		$orderedProducts = [];
+		foreach ( $products as $key => $value ) {
+			$attributes        = $value->get_attributes();
+			$orderedProducts[] = [
+				"name"                     => $value->get_name(),
+				"price"                    => $value->get_price(),
+				"bookings"                 => $attributes['bookings']->get_options()[0],
+				"additional_bookings"      => $attributes['additional_bookings']->get_options()[0],
+				"limited_features"         => ( ! empty( $attributes['limited_features'] ) ) ? $attributes['limited_features']->get_options()[0] : '',
+				"additional_booking_price" => ( ! empty( $attributes['additional_booking_price'] ) ) ? $attributes['additional_booking_price']->get_options()[0] : '',
+				"support_price_case"       => $attributes['support_price_case']->get_options()[0],
+				"url"                      => $attributes['url']->get_options()[0],
+				"position_number"          => $attributes['position_number']->get_options()[0],
+			];
+		}
+
+		$orderedProducts = sortBySubValue( $orderedProducts, 'position_number' );
 		?>
 
 
@@ -29,104 +56,48 @@
 				<h1 class="display-4 text-center mt-4"><?php echo $txt_titulo;?></h1>
 				<h4 class="text-center orange-text mb-5 font-weight-lighter"><?php echo $txt_promo;?><br></h4>
 			</div>
-            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 mb-3 flex" data-aos="zoom-in-up">
-                <div class="card card-paquetes">
-                    <div class="card-header">
-                        <h5 class="text-center mb-0"><?php echo __($plan1['nombre']);?></h5>
-                    </div>
-                    <div class="card-body">
-                        <h3 class="text-center titulo-paquete">$<?php echo __($plan1['mensual']);?><span class="subtitulo-paquete"><?php echo $txt_mensual;?></span></h3>
-                        <h3 class="text-center titulo-paquete-nombre"><?php echo $plan1['no_citas'];?><span>&nbsp;<?php echo $txt_citas_mes;?></span></h3>
-                        <h4 class="text-center titulo2-paquete mt-3"><?php echo $txt_citas_adicionales;?><br/>(100 <?php echo $txt_citas;?>)<br></h4>
+            <?php
+            foreach ($orderedProducts as $key => $value){
+                $delay = 500 * $key;
+                $dataaosdelay = ($key > 0)?"data-aos-delay=\"{$delay}\"":"";
+                ?>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 mb-3 flex" data-aos="zoom-in-up" <?php echo $dataaosdelay; ?>>
+                    <div class="card card-paquetes">
+                        <div class="card-header">
+                            <h5 class="text-center mb-0"><?php echo __($value['name']);?></h5>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="text-center titulo-paquete">$<?php echo __($value['price']);?><span class="subtitulo-paquete"><?php echo $txt_mensual;?></span></h3>
+                            <h3 class="text-center titulo-paquete-nombre"><?php echo $value['bookings'];?><span>&nbsp;<?php echo $txt_citas_mes;?></span></h3>
 
-                        <h4 class="text-center titulo2-paquete mt-3"><?php echo $txt_citas_adicionales_gratis;?></h4>
+                            <?php if(!empty($value['additional_bookings'])) { ?>
+                                <h4 class="text-center titulo2-paquete mt-3"><?php echo $txt_citas_adicionales;?><br/>(100 <?php echo $txt_citas;?>)<br></h4>
+                            <?php } ?>
+                            <?php if(!empty($value['limited_features'])) { ?>
+                                <h4 class="text-center titulo2-paquete mt-3"><?php echo $value['limited_features'];?></h4>
+                            <?php } else { ?>
+                                <h3 class="text-center titulo-paquete-nombre-2"><?php echo $value['additional_booking_price'];?>¢<span><?php echo $txt_cita;?></span></h3>
+                            <?php } ?>
 
-                        <h4 class="text-center titulo2-paquete mt-3"><?php echo $txt_soporte;?><br></h4>
-                        <h3 class="text-center titulo-paquete-nombre-2">
-							<?php if($plan1['soporte']!=""){?>
-                                $<?php echo $plan1['soporte'];?><span><?php echo $txt_caso;?></span>
-							<?php }?>
-                        </h3>
-
-                    </div>
-                    <div class="p-3">
-                        <a class="btn btn-block btn-lg orange-button" role="button" target="_blank" href="<?php echo __($plan1['url']);?>"><?php echo $txt_suscribirme;?></a>
+                            <h4 class="text-center titulo2-paquete mt-3"><?php echo $txt_soporte;?><br></h4>
+	                        <?php if(!empty($value['support_price_case']) && (strtolower($value['support_price_case']) != 'included' || empty($value['support_price_case']))) { ?>
+                                <h3 class="text-center titulo-paquete-nombre-2">
+			                        $<?php echo $value['support_price_case'];?><span><?php echo $txt_caso;?></span>
+                                </h3>
+	                        <?php } else { ?>
+                                <h3 class="text-center titulo-paquete-nombre-2">
+			                        <?php echo $txt_incluido;?>
+                                </h3>
+	                        <?php } ?>
+                        </div>
+                        <div class="p-3">
+                            <a class="btn btn-block btn-lg orange-button" role="button" target="_blank" href="<?php echo __($value['url']);?>"><?php echo $txt_suscribirme;?></a>
+                        </div>
                     </div>
                 </div>
-            </div>
-			<div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 mb-3 flex" data-aos="zoom-in-up" data-aos-delay="500">
-				<div class="card card-paquetes">
-					<div class="card-header">
-						<h5 class="text-center mb-0"><?php echo __($plan2['nombre']);?></h5>
-					</div>
-					<div class="card-body">
-						<h3 class="text-center titulo-paquete">$<?php echo $plan2['mensual'];?><span class="subtitulo-paquete"><?php echo $txt_mensual;?></span></h3>
-						<h3 class="text-center titulo-paquete-nombre"><?php echo $plan2['no_citas'];?><span>&nbsp;<?php echo $txt_citas_mes;?></span></h3>
-						<h4 class="text-center titulo2-paquete mt-3"><?php echo $txt_citas_adicionales;?><br/>(100 <?php echo $txt_citas;?>)<br></h4>
-						<h3 class="text-center titulo-paquete-nombre-2"><?php echo $plan2['costo_cita_adicional'];?>¢<span><?php echo $txt_cita;?></span></h3>
-						<h4 class="text-center titulo2-paquete mt-3"><?php echo $txt_soporte;?><br></h4>
-						<h3 class="text-center titulo-paquete-nombre-2">
-							<?php if($plan2['soporte']!=""){?>
-							$<?php echo $plan2['soporte'];?><span><?php echo $txt_caso;?></span>
-							<?php }?>
-						</h3>
-
-					</div>
-                    <div class="p-3">
-                        <a class="btn btn-block btn-lg orange-button" role="button" target="_blank" href="<?php echo __($plan2['url']);?>"><?php echo $txt_suscribirme;?></a>
-                    </div>
-				</div>
-			</div>
-			<div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 mb-3 flex" data-aos="zoom-in-up" data-aos-delay="1000">
-				<div class="card card-paquetes">
-					<div class="card-header">
-						<h5 class="text-center mb-0"><?php echo __($plan3['nombre']);?></h5>
-					</div>
-					<div class="card-body">
-						<h3 class="text-center titulo-paquete">$<?php echo $plan3['mensual'];?><span class="subtitulo-paquete"><?php echo $txt_mensual;?></span></h3>
-						<h3 class="text-center titulo-paquete-nombre"><?php echo $plan3['no_citas'];?><span>&nbsp;<?php echo $txt_citas_mes;?></span></h3>
-						<h4 class="text-center titulo2-paquete mt-3"><?php echo $txt_citas_adicionales;?><br/>(100 <?php echo $txt_citas;?>)<br></h4>
-						<h3 class="text-center titulo-paquete-nombre-2"><?php echo $plan3['costo_cita_adicional'];?>¢<span><?php echo $txt_cita;?></span></h3>
-						<h4 class="text-center titulo2-paquete mt-3"><?php echo $txt_soporte;?><br></h4>
-						<h3 class="text-center titulo-paquete-nombre-2">
-							<?php if($plan3['soporte']!=""){?>
-								$<?php echo $plan2['soporte'];?>&nbsp;<span><?php echo $txt_caso;?></span>
-							<?php }else{?>
-								<?php echo $txt_incluido;?>
-							<?php }?>
-						</h3>
-
-					</div>
-                    <div class="p-3">
-                        <a class="btn btn-block btn-lg orange-button" role="button" target="_blank" href="<?php echo __($plan3['url']);?>"><?php echo $txt_suscribirme;?></a>
-                    </div>
-				</div>
-			</div>
-			<div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 mb-3 flex" data-aos="zoom-in-up" data-aos-delay="1500">
-				<div class="card card-paquetes">
-					<div class="card-header">
-						<h5 class="text-center mb-0"><?php echo __($plan4['nombre']);?></h5>
-					</div>
-					<div class="card-body">
-						<h3 class="text-center titulo-paquete">$<?php echo $plan4['mensual'];?><span class="subtitulo-paquete"><?php echo $txt_mensual;?></span></h3>
-						<h3 class="text-center titulo-paquete-nombre"><?php echo $plan4['no_citas'];?><span>&nbsp;<?php echo $txt_citas_mes;?></span></h3>
-						<h4 class="text-center titulo2-paquete mt-3"><?php echo $txt_citas_adicionales;?><br/>(100 <?php echo $txt_citas;?>)<br></h4>
-						<h3 class="text-center titulo-paquete-nombre-2"><?php echo $plan4['costo_cita_adicional'];?>¢<span><?php echo $txt_cita;?></span></h3>
-						<h4 class="text-center titulo2-paquete mt-3"><?php echo $txt_soporte;?><br></h4>
-						<h3 class="text-center titulo-paquete-nombre-2">
-							<?php if($plan4['soporte']!=""){?>
-								$<?php echo $plan4['soporte'];?>&nbsp;<span><?php echo $txt_caso;?></span>
-							<?php }else{?>
-								<?php echo $txt_incluido;?>
-							<?php }?>
-						</h3>
-
-					</div>
-                    <div class="p-3">
-                        <a class="btn btn-block btn-lg orange-button" role="button" target="_blank" href="<?php echo __($plan4['url']);?>"><?php echo $txt_suscribirme;?></a>
-                    </div>
-				</div>
-			</div>
+                <?php
+            }
+            ?>
 		</div>
 		<?php
 		// TRADUCCION

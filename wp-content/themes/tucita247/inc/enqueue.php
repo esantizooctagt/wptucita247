@@ -36,6 +36,7 @@ function tucita247_scripts() {
 	wp_localize_script( 'tucita247-scripts', 'ajax_var', array(
 		'url'    => admin_url( 'admin-ajax.php' ),
 		'site_url' => site_url(),
+        'ajax_nonce' => wp_create_nonce('scripts-ajax-nonce')
 	) );
 
 

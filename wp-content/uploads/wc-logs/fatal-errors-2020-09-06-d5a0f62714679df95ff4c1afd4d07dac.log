@@ -1,0 +1,55 @@
+2020-09-06T01:36:35+00:00 CRITICAL Uncaught Error: Using $this when not in object context in /home/josue/Sites/wordpress/wp-content/plugins/woocommerce-subscriptions/includes/class-wc-subscription.php:1899
+Stack trace:
+#0 /home/josue/Sites/wordpress/wp-content/plugins/woocommerce-dynamics-payments/woocommerce-dynamics-payments.php(316): WC_Subscription::get_related_orders()
+#1 /home/josue/Sites/wordpress/wp-content/plugins/woocommerce-dynamics-payments/woocommerce-dynamics-payments.php(207): WC_Gateway_Dynamics->registerToken()
+#2 /home/josue/Sites/wordpress/wp-content/plugins/woocommerce-dynamics-payments/woocommerce-dynamics-payments.php(159): WC_Gateway_Dynamics->process_subscription_payment()
+#3 /home/josue/Sites/wordpress/wp-content/plugins/woocommerce/includes/class-wc-checkout.php(956): WC_Gateway_Dynamics->process_payment()
+#4 /home/josue/Sites/wordpress/wp-content/plugins/woocommerce/includes/class-wc-checkout.php(1159): WC_Checkout->process_order_payment()
+#5 /home/josue/Sites/wordpress/wp-content/plugins/woocommerce/includes/class-w in /home/josue/Sites/wordpress/wp-content/plugins/woocommerce-subscriptions/includes/class-wc-subscription.php on line 1899
+
+2020-09-06T01:44:21+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Subscriptions_Order::get_related_orders() in /home/josue/Sites/wordpress/wp-content/plugins/woocommerce-dynamics-payments/woocommerce-dynamics-payments.php:316
+Stack trace:
+#0 /home/josue/Sites/wordpress/wp-content/plugins/woocommerce-dynamics-payments/woocommerce-dynamics-payments.php(207): WC_Gateway_Dynamics->registerToken()
+#1 /home/josue/Sites/wordpress/wp-content/plugins/woocommerce-dynamics-payments/woocommerce-dynamics-payments.php(159): WC_Gateway_Dynamics->process_subscription_payment()
+#2 /home/josue/Sites/wordpress/wp-content/plugins/woocommerce/includes/class-wc-checkout.php(956): WC_Gateway_Dynamics->process_payment()
+#3 /home/josue/Sites/wordpress/wp-content/plugins/woocommerce/includes/class-wc-checkout.php(1159): WC_Checkout->process_order_payment()
+#4 /home/josue/Sites/wordpress/wp-content/plugins/woocommerce/includes/class-wc-form-handler.php(353): WC_Checkout->process_checkout()
+#5 /home/josue/Sites/wordpress/wp-includes/class-wp-hook.php(287): W in /home/josue/Sites/wordpress/wp-content/plugins/woocommerce-dynamics-payments/woocommerce-dynamics-payments.php on line 316
+
+2020-09-06T02:49:10+00:00 CRITICAL Uncaught Error: Using $this when not in object context in /home/josue/Sites/wordpress/wp-content/plugins/woocommerce/includes/abstracts/abstract-wc-data.php:177
+Stack trace:
+#0 /home/josue/Sites/wordpress/wp-content/plugins/woocommerce-dynamics-payments/woocommerce-dynamics-payments.php(261): WC_Data::get_id()
+#1 /home/josue/Sites/wordpress/wp-content/plugins/woocommerce-dynamics-payments/woocommerce-dynamics-payments.php(295): WC_Gateway_Dynamics->getHash()
+#2 /home/josue/Sites/wordpress/wp-content/plugins/woocommerce-dynamics-payments/woocommerce-dynamics-payments.php(208): WC_Gateway_Dynamics->registerToken()
+#3 /home/josue/Sites/wordpress/wp-content/plugins/woocommerce-dynamics-payments/woocommerce-dynamics-payments.php(159): WC_Gateway_Dynamics->process_subscription_payment()
+#4 /home/josue/Sites/wordpress/wp-content/plugins/woocommerce/includes/class-wc-checkout.php(956): WC_Gateway_Dynamics->process_payment()
+#5 /home/josue/Sites/wordpress/wp-content/plugins/woocommerce/includes/class-wc-checkout.php(1 in /home/josue/Sites/wordpress/wp-content/plugins/woocommerce/includes/abstracts/abstract-wc-data.php on line 177
+
+2020-09-06T03:07:50+00:00 CRITICAL Uncaught Error: Call to a member function get_id() on null in /home/josue/Sites/wordpress/wp-content/plugins/woocommerce-dynamics-payments/woocommerce-dynamics-payments.php:262
+Stack trace:
+#0 /home/josue/Sites/wordpress/wp-content/plugins/woocommerce-dynamics-payments/woocommerce-dynamics-payments.php(296): WC_Gateway_Dynamics->getHash()
+#1 /home/josue/Sites/wordpress/wp-content/plugins/woocommerce-dynamics-payments/woocommerce-dynamics-payments.php(208): WC_Gateway_Dynamics->registerToken()
+#2 /home/josue/Sites/wordpress/wp-content/plugins/woocommerce-dynamics-payments/woocommerce-dynamics-payments.php(159): WC_Gateway_Dynamics->process_subscription_payment()
+#3 /home/josue/Sites/wordpress/wp-content/plugins/woocommerce/includes/class-wc-checkout.php(956): WC_Gateway_Dynamics->process_payment()
+#4 /home/josue/Sites/wordpress/wp-content/plugins/woocommerce/includes/class-wc-checkout.php(1159): WC_Checkout->process_order_payment()
+#5 /home/josue/Sites/wordpress/wp-content/plugins/woocommerce/includes/class-wc in /home/josue/Sites/wordpress/wp-content/plugins/woocommerce-dynamics-payments/woocommerce-dynamics-payments.php on line 262
+
+2020-09-06T03:29:33+00:00 CRITICAL Uncaught Error: Call to a member function get_id() on null in /home/josue/Sites/wordpress/wp-content/plugins/woocommerce-dynamics-payments/woocommerce-dynamics-payments.php:352
+Stack trace:
+#0 /home/josue/Sites/wordpress/wp-content/plugins/woocommerce-dynamics-payments/woocommerce-dynamics-payments.php(208): WC_Gateway_Dynamics->registerToken()
+#1 /home/josue/Sites/wordpress/wp-content/plugins/woocommerce-dynamics-payments/woocommerce-dynamics-payments.php(159): WC_Gateway_Dynamics->process_subscription_payment()
+#2 /home/josue/Sites/wordpress/wp-content/plugins/woocommerce/includes/class-wc-checkout.php(956): WC_Gateway_Dynamics->process_payment()
+#3 /home/josue/Sites/wordpress/wp-content/plugins/woocommerce/includes/class-wc-checkout.php(1159): WC_Checkout->process_order_payment()
+#4 /home/josue/Sites/wordpress/wp-content/plugins/woocommerce/includes/class-wc-form-handler.php(353): WC_Checkout->process_checkout()
+#5 /home/josue/Sites/wordpress/wp-includes/class-wp-hook.php(287): WC_Form_Handler::checkout_ac in /home/josue/Sites/wordpress/wp-content/plugins/woocommerce-dynamics-payments/woocommerce-dynamics-payments.php on line 352
+
+2020-09-06T04:30:59+00:00 CRITICAL Uncaught Error: Call to a member function get_parent_id() on null in /home/josue/Sites/wordpress/wp-content/plugins/woocommerce-dynamics-payments/woocommerce-dynamics-payments.php:335
+Stack trace:
+#0 /home/josue/Sites/wordpress/wp-content/plugins/woocommerce-dynamics-payments/woocommerce-dynamics-payments.php(301): WC_Gateway_Dynamics->getAccountToken()
+#1 /home/josue/Sites/wordpress/wp-content/plugins/woocommerce-dynamics-payments/woocommerce-dynamics-payments.php(416): WC_Gateway_Dynamics->getHash()
+#2 /home/josue/Sites/wordpress/wp-content/plugins/woocommerce-dynamics-payments/woocommerce-dynamics-payments.php(259): WC_Gateway_Dynamics->authorizeToken()
+#3 /home/josue/Sites/wordpress/wp-includes/class-wp-hook.php(287): WC_Gateway_Dynamics->scheduled_process_subscription_payment()
+#4 /home/josue/Sites/wordpress/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters()
+#5 /home/josue/Sites/wordpress/wp-includes/plugin.php(478): WP_Hook->do_action()
+#6 /home/josue/Sites/wordpress/wp-content/plugins/woocomm in /home/josue/Sites/wordpress/wp-content/plugins/woocommerce-dynamics-payments/woocommerce-dynamics-payments.php on line 335
+
