@@ -81,9 +81,9 @@ $("#wizard-registration").wizard({
             } else {
                 if (result == "99") {
                     if (window.location.href.indexOf("/es/") > -1) {
-                        window.location.href = 'http://wordpress.test/es/gracias';
+                        window.location.href = 'https://tucita247.local/es/gracias';
                     } else {
-                        window.location.href = 'http://wordpress.test/thankyou';
+                        window.location.href = 'https://tucita247.local/thankyou';
                     }
                 } else {
                     window.location.href = ajax_var.site_url + '/checkout';

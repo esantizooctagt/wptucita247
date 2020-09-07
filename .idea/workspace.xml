@@ -19,8 +19,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="43ea18a0-278a-45be-b8e0-a1269d0dd4c1" name="Default Changelist" comment="Cambios:&#10;&#10;-Validar el correcto funcionamiento de los cobros recurrentes (ya que este no se esta ejecutando)&#10;-Validar el cobro a productos no de suscripcion sino de compra directa&#10;-Crear una pagina que reciba en la url los siguientes parametros (businessId, email y tipo de suscripcion en formato MD5), estos parametros seran de utilidad para 1. registrar y logear al usuario para la compra, 2. Desplegar o no el contenido de compra directa (Si es FREE solo es el contenido de suscripcion el que se le muestra)&#10;-productos que jalen de woocommerce&#10;-Ver que funcione el flujo de adquisicion de compra directa y suscripcion desde esta pagina.">
+    <list default="true" id="43ea18a0-278a-45be-b8e0-a1269d0dd4c1" name="Default Changelist" comment="Cancelacion de suscripciones anteriores al obtener una nueva">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/tucita247/assets/js/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/tucita247/assets/js/scripts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/tucita247/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/tucita247/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/tucita247/inc/ajax-functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/tucita247/inc/ajax-functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/tucita247/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/tucita247/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +72,7 @@
       <workItem from="1599157787367" duration="63000" />
       <workItem from="1599157854862" duration="15698000" />
       <workItem from="1599240636190" duration="5000" />
-      <workItem from="1599441110496" duration="2231000" />
+      <workItem from="1599441110496" duration="3203000" />
     </task>
     <task id="LOCAL-00001" summary="Cambios:&#10;&#10;-Validar el correcto funcionamiento de los cobros recurrentes (ya que este no se esta ejecutando)&#10;-Validar el cobro a productos no de suscripcion sino de compra directa&#10;-Crear una pagina que reciba en la url los siguientes parametros (businessId, email y tipo de suscripcion en formato MD5), estos parametros seran de utilidad para 1. registrar y logear al usuario para la compra, 2. Desplegar o no el contenido de compra directa (Si es FREE solo es el contenido de suscripcion el que se le muestra)&#10;-productos que jalen de woocommerce&#10;-Ver que funcione el flujo de adquisicion de compra directa y suscripcion desde esta pagina.">
       <created>1599442662185</created>
@@ -77,7 +81,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599442662185</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Cancelacion de suscripciones anteriores al obtener una nueva">
+      <created>1599445044034</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1599445044034</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -99,17 +110,18 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="Cambios:&#10;&#10;-Validar el correcto funcionamiento de los cobros recurrentes (ya que este no se esta ejecutando)&#10;-Validar el cobro a productos no de suscripcion sino de compra directa&#10;-Crear una pagina que reciba en la url los siguientes parametros (businessId, email y tipo de suscripcion en formato MD5), estos parametros seran de utilidad para 1. registrar y logear al usuario para la compra, 2. Desplegar o no el contenido de compra directa (Si es FREE solo es el contenido de suscripcion el que se le muestra)&#10;-productos que jalen de woocommerce&#10;-Ver que funcione el flujo de adquisicion de compra directa y suscripcion desde esta pagina." />
-    <option name="LAST_COMMIT_MESSAGE" value="Cambios:&#10;&#10;-Validar el correcto funcionamiento de los cobros recurrentes (ya que este no se esta ejecutando)&#10;-Validar el cobro a productos no de suscripcion sino de compra directa&#10;-Crear una pagina que reciba en la url los siguientes parametros (businessId, email y tipo de suscripcion en formato MD5), estos parametros seran de utilidad para 1. registrar y logear al usuario para la compra, 2. Desplegar o no el contenido de compra directa (Si es FREE solo es el contenido de suscripcion el que se le muestra)&#10;-productos que jalen de woocommerce&#10;-Ver que funcione el flujo de adquisicion de compra directa y suscripcion desde esta pagina." />
+    <MESSAGE value="Cancelacion de suscripciones anteriores al obtener una nueva" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cancelacion de suscripciones anteriores al obtener una nueva" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1123" y="607" width="375" height="154" key="#WordPress" timestamp="1599100712098">
       <screen x="72" y="27" width="2488" height="1308" />
     </state>
     <state x="1123" y="607" width="375" height="154" key="#WordPress/72.27.2488.1308@72.27.2488.1308" timestamp="1599100712098" />
-    <state x="172" y="127" width="2288" height="1108" key="DiffContextDialog" timestamp="1599182366554">
+    <state x="172" y="127" width="2288" height="1108" key="DiffContextDialog" timestamp="1599450685417">
       <screen x="72" y="27" width="2488" height="1308" />
     </state>
-    <state x="172" y="127" width="2288" height="1108" key="DiffContextDialog/72.27.2488.1308@72.27.2488.1308" timestamp="1599182366554" />
+    <state x="172" y="127" width="2288" height="1108" key="DiffContextDialog/72.27.2488.1308@72.27.2488.1308" timestamp="1599450685417" />
     <state x="1099" y="439" width="424" height="491" key="FileChooserDialogImpl" timestamp="1599182563629">
       <screen x="72" y="27" width="2488" height="1308" />
     </state>
@@ -122,18 +134,22 @@
       <screen x="72" y="27" width="2488" height="1308" />
     </state>
     <state x="1063" y="364" width="496" height="640" key="RollbackChangesDialog/72.27.2488.1308@72.27.2488.1308" timestamp="1599441596495" />
-    <state x="487" y="463" width="1380" height="535" key="Vcs.Push.Dialog.v2" timestamp="1599442709846">
+    <state x="194" y="305" width="2234" height="758" key="VCS.ChangeListViewerDialog" timestamp="1599450559930">
       <screen x="72" y="27" width="2488" height="1308" />
     </state>
-    <state x="487" y="463" width="1380" height="535" key="Vcs.Push.Dialog.v2/72.27.2488.1308@72.27.2488.1308" timestamp="1599442709846" />
+    <state x="194" y="305" width="2234" height="758" key="VCS.ChangeListViewerDialog/72.27.2488.1308@72.27.2488.1308" timestamp="1599450559930" />
+    <state x="487" y="463" width="1380" height="535" key="Vcs.Push.Dialog.v2" timestamp="1599445049292">
+      <screen x="72" y="27" width="2488" height="1308" />
+    </state>
+    <state x="487" y="463" width="1380" height="535" key="Vcs.Push.Dialog.v2/72.27.2488.1308@72.27.2488.1308" timestamp="1599445049292" />
     <state x="930" y="299" width="762" height="770" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1599442634028">
       <screen x="72" y="27" width="2488" height="1308" />
     </state>
     <state x="930" y="299" width="762" height="770" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/72.27.2488.1308@72.27.2488.1308" timestamp="1599442634028" />
-    <state x="1007" y="420" width="618" height="580" key="find.popup" timestamp="1599173598585">
+    <state x="1007" y="420" width="756" height="580" key="find.popup" timestamp="1599450639557">
       <screen x="72" y="27" width="2488" height="1308" />
     </state>
-    <state x="1007" y="420" width="618" height="580" key="find.popup/72.27.2488.1308@72.27.2488.1308" timestamp="1599173598585" />
+    <state x="1007" y="420" width="756" height="580" key="find.popup/72.27.2488.1308@72.27.2488.1308" timestamp="1599450639557" />
   </component>
   <component name="WordPressConfiguration" enabled="true">
     <wordpressPath>$PROJECT_DIR$</wordpressPath>

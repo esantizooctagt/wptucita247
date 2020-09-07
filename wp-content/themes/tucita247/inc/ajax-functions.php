@@ -60,7 +60,7 @@ function add_business()
         CURLOPT_POSTFIELDS => json_encode($body),
         CURLOPT_HTTPHEADER => array(
             "Content-Type: application/json",
-            "origin: http://wordpress.test"
+            "origin: https://tucita247.local"
         ),
     ));
 

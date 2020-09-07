@@ -42,10 +42,10 @@ function wc_custom_redirect_after_purchase() {
 		$order = wc_get_order( $order_id );
 		if (!$order->has_status('completed')){
 			$lang = get_locale() == "es_ES" ? "es/error-page" : "error-page";
-			wp_redirect( 'http://wordpress.test/' . $lang );
+			wp_redirect( 'https://tucita247.local/' . $lang );
 		} else {
 			$lang = get_locale() == "es_ES" ? "es/gracias" : "thankyou";
-			wp_redirect( 'http://wordpress.test/' . $lang );
+			wp_redirect( 'https://tucita247.local/' . $lang );
 		}
     	exit;
   	}
