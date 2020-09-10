@@ -275,7 +275,6 @@ function init_dinamics_gateway_class()
                 $order->set_transaction_id($transaction);
                 foreach ($order->get_items() as $item_id => $item) {
                     $product_id = $item['product_id'];
-                    $order->add_order_note("product_id: " . $product_id);
                 }
                 $tipo = get_post_meta($product_id, 'tipo', true);
                 $no_citas = get_post_meta($product_id, 'citas', true);
@@ -328,8 +327,6 @@ function init_dinamics_gateway_class()
 
             $order = wc_get_order($order_id);
             $subscriptions_ids = wcs_get_subscriptions_for_order($order_id, array('order_type' => 'any'));
-            $order->add_order_note("subscriptions_ids: " . print_r($subscriptions_ids, true));
-            $order->add_order_note("count(subscriptions_ids)): " . count($subscriptions_ids));
 
             if (count($subscriptions_ids) > 0) {
 
@@ -337,13 +334,11 @@ function init_dinamics_gateway_class()
 
                 foreach ($subscriptions_ids as $subscription_id => $subscription_obj) {
                     $subscription_parent_id = $subscription_obj->order->id;
-                    $order->add_order_note("subscription_parent_id: " . $subscription_parent_id);
                     break;
                 }
 
                 return get_post_meta($subscription_parent_id, 'AccountToken', true);
             } else {
-                $order->add_order_note("whats?");
                 return get_post_meta($order_id, 'AccountToken', true);
             }
         }
@@ -386,8 +381,6 @@ function init_dinamics_gateway_class()
             $AccountToken = json_decode($Token)->AccountToken;
 
             $order = wc_get_order($order_id);
-            $order->add_order_note("responseToken: " . print_r($responseToken, true));
-            $order->add_order_note("AccountToken: " . $AccountToken);
 
             // GUARDO TOKEN EN CUSTOM FIELD DEL PARENT ORDER
             update_post_meta($order_id, 'AccountToken', $AccountToken);
